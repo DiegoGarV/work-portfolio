@@ -17,12 +17,6 @@ const AboutMe = () => {
                 <div className="x4">
                     <div className="cloud"></div>
                 </div>
-                <div className="x5">
-                    <div className="cloud"></div>
-                </div>
-                <div className="x6">
-                    <div className="cloud"></div>
-                </div>
             </div>
             <div className="container">
                 <div className="avatar">
@@ -30,7 +24,7 @@ const AboutMe = () => {
                 </div>
             </div>
             <div id='title-content'>
-                <h1 id='name'>Diego García</h1>
+                <h1 id='name'>Diego García Valle</h1>
             </div>
             <div id='personal-info'>
                 <div id='card-personal'>

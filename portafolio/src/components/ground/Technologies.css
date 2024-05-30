@@ -1,4 +1,222 @@
 .technologies {
-    background-color: #8B4513;
-    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    z-index: 2;
+}
+
+.technologies.blur {
+    filter: blur(5px);
+}
+
+#title {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.tree {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.tree img{
+    width: 97%;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.techFruit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+}
+
+.techFruits img {
+    max-width: 10%;
+    height: auto;
+    cursor: pointer;
+}
+
+.techFruits img:hover {
+    animation: swing 0.5s ease-in-out infinite alternate;
+}
+
+/* PostgreSQL */
+.techFruit:nth-child(1) { 
+    top: 20%;
+    left: 15%;
+}
+
+/* NodeJS */
+.techFruit:nth-child(2) {
+    top: 30%;
+    left: 25%;
+}
+
+/* AWS */
+.techFruit:nth-child(3) {
+    top: 15%;
+    left: 30%;
+}
+
+/* CSS */
+.techFruit:nth-child(4) {
+    top: 50%;
+    left: 45%;
+}
+
+/* Docker */
+.techFruit:nth-child(5) {
+    top: 22%;
+    left: 49%;
+}
+
+/* ExpressJS */
+.techFruit:nth-child(6) {
+    top: 5%;
+    left: 52%;
+}
+
+/* Git */
+.techFruit:nth-child(7) {
+    top: 15%;
+    left: 70%;
+}
+
+/* Github */
+.techFruit:nth-child(8) {
+    top: 40%;
+    left: 83%;
+}
+
+/* HTML */
+.techFruit:nth-child(9) {
+    top: 50%;
+    left: 15%;
+}
+
+/* Java */
+.techFruit:nth-child(10) {
+    top: 20%;
+    left: 85%;
+}
+
+/* JavaScript */
+.techFruit:nth-child(11) {
+    top: 55%;
+    left: 30%;
+}
+
+/* Python */
+.techFruit:nth-child(12) {
+    top: 35%;
+    left: 55%;
+}
+
+/* React */
+.techFruit:nth-child(13) {
+    top: 55%;
+    left: 72%;
+}
+
+/* Vite */
+.techFruit:nth-child(14) {
+    top: 35%;
+    left: 40%;
+}
+
+/* NextJS */
+.techFruit:nth-child(15) {
+    top: 30%;
+    left: 70%;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ac7d49;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    box-sizing: border-box;
+}
+
+.modal-img {
+    width: 100%;
+    max-width: 200px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.modal-img:hover {
+    transform: scale(1.1);
+}
+
+.modal-text {
+    color: white;
+}
+
+.modal-text h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+}
+
+.modal-text h2 {
+    margin: 0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .modal-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .modal-img {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .modal-text h1 {
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .modal-text h2 {
+        font-size: 1.5em;
+        text-align: left;
+    }
 }

@@ -1,12 +1,22 @@
-import React from 'react'
+import { useEffect, useRef }  from 'react'
 import './Projects.css'
 
 const Projects = () => {
+    
+    const topSectionRef = useRef();
+
+    useEffect(() => {
+        const treeHeight = document.querySelector('.tree').offsetHeight
+        topSectionRef.current.style.height = `${treeHeight}px`
+    }, [])
+    
     return (
-        <section id="projects" className="projects">
-            <h2>Projects</h2>
-            <p>This is where you showcase your projects.</p>
-        </section>
+        <div className='projects' id='projects'>
+            <div className='top-section' ref={topSectionRef}></div>
+            <div className='bottom-section'>
+                <h1 className='texto'>HOLA</h1>
+            </div>
+        </div>
     )
 }
 
