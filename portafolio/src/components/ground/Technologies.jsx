@@ -4,17 +4,8 @@ import './Technologies.css'
 const Technologies = () => {
     return (
         <section id="technologies" className="technologies">
-            <h2>Projects</h2>
-            <div className="tech-list">
-                <div className="tech">
-                    <h3>Project 1</h3>
-                    <p>Description of project 1.</p>
-                </div>
-                <div className="tech">
-                    <h3>Project 2</h3>
-                    <p>Description of project 2.</p>
-                </div>
-            </div>
+            <h2>Technologies</h2>
+            <p>This is where you list the technologies you use.</p>
         </section>
     )
 }
