@@ -6,7 +6,7 @@
 
 .top-section {
     position: absolute;
-    top: -950%;
+    top: -135%;
     left: 0;
     width: 100%;
     height: 50%;
@@ -20,4 +20,57 @@
 
 .texto {
     margin-top: 300px;
+    margin-bottom: 150px;
+    font-size: 50px;
+}
+
+@media (max-width: 1200px) {
+    .texto {
+      font-size: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .texto {
+      font-size: 20px;
+    }
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project img {
+    max-width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.1);
+}
+
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel button {
+    margin: 0 20px;
+}
+
+.project-image-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.project-details {
+    flex: 2;
+}
+
+.project-details p {
+    color: white;
 }

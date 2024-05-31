@@ -53,49 +53,35 @@
   
   @media (max-width: 1200px) {
     #name {
-      font-size: 60px;
+      font-size: 40px;
     }
 
     #personal-info #about {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     #personal-info p {
-        font-size: 28px;
+        font-size: 16px;
     }
 }
 
 @media (max-width: 992px) {
   #name {
-    font-size: 55px;
+    font-size: 35px;
   }
 
   #personal-info #about {
-      font-size: 35px;
+      font-size: 15px;
   }
 
   #personal-info p {
-      font-size: 24px;
+      font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
   #name {
-    font-size: 50px;
-  }
-
-  #personal-info #about {
-      font-size: 30px;
-  }
-
-  #personal-info p {
-      font-size: 20px;
-  }
-}
-
-@media (max-width: 576px) {
-  #name {
-    font-size: 45px;
+    font-size: 25px;
   }
 
   #personal-info #about {
@@ -103,7 +89,21 @@
   }
 
   #personal-info p {
-      font-size: 16px;
+      font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  #name {
+    font-size: 20px;
+  }
+
+  #personal-info #about {
+      font-size: 20px;
+  }
+
+  #personal-info p {
+      font-size: 13px;
   }
 }
 

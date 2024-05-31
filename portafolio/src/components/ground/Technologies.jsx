@@ -34,7 +34,7 @@ const Technologies = () => {
 
     return (
         <div className='technologies' id='technologies'>
-            <h1>Technologies</h1>
+            <h1 className='title'>Technologies</h1>
             <div className='tree'>
                 <img src='../src/img/arbol.png' alt='Árbol' />
                 <div className='techFruits'>
